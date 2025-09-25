@@ -1,8 +1,8 @@
 trigger:
-- main
+- none
 
 pool:
-  vmImage: ubuntu-lattest
+  vmImage: ubuntu-latest
 
 steps:
   - script: dotnet build
