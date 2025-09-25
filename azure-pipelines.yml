@@ -1,0 +1,9 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-lattest
+
+steps:
+  - script: echo "Hello Sourav! Your pipeline is working"
+    displayName: "Run Pipeline steps"
