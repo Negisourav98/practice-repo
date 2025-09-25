@@ -4,10 +4,14 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+# steps:
+#   - script: dotnet build
+#     displayName: "Build the Project"
+#   - task: UseDotNet@2
+#     inputs:
+#       packageType: "sdk"
+#       version: '7.0.x'
+
 steps:
-  - script: dotnet build
-    displayName: "Build the Project"
-  - task: UseDotNet@2
-    inputs:
-      packageType: "sdk"
-      version: '7.0.x'
+  - script: echo "Hello, Sourav! Your Pipeline is working"
+    displayName: "Run Pipeline steps"
